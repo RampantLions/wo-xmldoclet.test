@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<meta created="2010-04-04T19:22:26" version="0.7" />
+	<class abstract="true" final="false" superclass="Object" visibility="public" name="org.weborganic.xmldoclet.test.TestAbstractClass" package="org.weborganic.xmldoclet.test" enum="false" serializable="false" interface="false" superclassfulltype="java.lang.Object" fulltype="org.weborganic.xmldoclet.test.TestAbstractClass" type="TestAbstractClass">
+		<description>A test abstract class.</description>
+		<implements>
+			<interface fulltype="org.weborganic.xmldoclet.test.TestInterface" type="TestInterface" />
+		</implements>
+		<tags>
+			<tag name="@author">
+				<description><author>Christophe Lauret</author>
+</description>
+			</tag>
+			<tag name="@version">
+				<description>1 April 2010</description>
+			</tag>
+		</tags>
+		<constructors>
+			<constructor final="false" static="false" synchronized="false" visibility="public" name="TestAbstractClass" synthetic="false" interface="false" />
+		</constructors>
+	</class>
+
+</root>

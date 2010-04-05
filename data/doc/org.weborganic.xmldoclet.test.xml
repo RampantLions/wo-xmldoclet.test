@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<meta created="2010-04-04T19:22:26" version="0.7" />
+	<package name="org.weborganic.xmldoclet.test">
+		<description>This is our test package doc.</description>
+		<see xlink:type="simple" xlink:href="http://www.weborganic.org" xlink:title="Weborganic.org" />
+	</package>
+</root>

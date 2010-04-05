@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<meta created="2010-04-04T19:22:26" version="0.7" />
+	<class abstract="false" final="true" superclass="Enum" visibility="public" name="org.weborganic.xmldoclet.test.TestEnum" package="org.weborganic.xmldoclet.test" enum="true" serializable="true" interface="false" superclassfulltype="java.lang.Enum" fulltype="org.weborganic.xmldoclet.test.TestEnum" type="TestEnum">
+		<description>An enumeration.</description>
+		<tags>
+			<tag name="@author">
+				<description><author>Christophe Lauret</author>
+</description>
+			</tag>
+			<tag name="@version">
+				<description>1 April 2010</description>
+			</tag>
+		</tags>
+		<methods>
+			<method abstract="false" final="false" static="true" synchronized="false" visibility="public" name="values" synthetic="false" fulltype="org.weborganic.xmldoclet.test.TestEnum[]" type="TestEnum" interface="false" />
+			<method abstract="false" final="false" static="true" synchronized="false" visibility="public" name="valueOf" synthetic="false" fulltype="org.weborganic.xmldoclet.test.TestEnum" type="TestEnum" interface="false">
+				<parameters>
+					<parameter name="name" fulltype="java.lang.String" type="String" />
+				</parameters>
+			</method>
+		</methods>
+	</class>
+
+</root>

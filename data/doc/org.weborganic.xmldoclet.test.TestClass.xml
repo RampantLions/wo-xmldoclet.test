@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<meta created="2010-04-04T19:22:26" version="0.7" />
+	<class abstract="false" final="false" superclass="TestAbstractClass" visibility="public" name="org.weborganic.xmldoclet.test.TestClass" package="org.weborganic.xmldoclet.test" enum="false" serializable="false" interface="false" superclassfulltype="org.weborganic.xmldoclet.test.TestAbstractClass" fulltype="org.weborganic.xmldoclet.test.TestClass" type="TestClass">
+		<description>ABC!</description>
+		<implements>
+			<interface fulltype="org.weborganic.xmldoclet.test.TestInterface" type="TestInterface" />
+		</implements>
+		<annotations>
+			<annotation name="TestAnnotation">
+				<element name="parameters">
+					<description>A list of parameters.</description>
+					<array>
+						<value value="A" type="String" />
+						<value value="B" type="String" />
+					</array>
+				</element>
+				<element name="count">
+					<description>Some number</description>
+					<value value="33" type="int" />
+				</element>
+				<element name="greek">
+					<description>Some enum</description>
+					<value value="org.weborganic.xmldoclet.test.TestEnum.BETA" type="org.weborganic.xmldoclet.test.TestEnum" />
+				</element>
+			</annotation>
+		</annotations>
+		<fields>
+			<field volatile="false" final="true" static="true" const="my favorite!" visibility="public" transient="false" name="FAVORITE" constexpr="&quot;my favorite!&quot;" fulltype="java.lang.String" type="String">
+				<description>My favorite constant.</description>
+			</field>
+		</fields>
+		<constructors>
+			<constructor final="false" static="false" synchronized="false" visibility="public" name="TestClass" synthetic="false" interface="false" />
+		</constructors>
+		<methods>
+			<description>a list of 
+  <i>stuff</i></description>
+			<method abstract="false" final="false" static="false" synchronized="false" visibility="public" name="doSomething" synthetic="false" fulltype="void" type="void" interface="false">
+				<description>Let's check this doclet. 
+  <div class="inherited"></div>
+  <p>Let's add some 
+  <i>code</i>: 
+  <code>
+<![CDATA[<service id="123">
+   <url pattern="/{sdd}"/>
+ </service>
+ ]]>
+  </code></p>
+  <p>Include some value like 
+  <var>#FAVORITE</var>.</p></description>
+				<see xlink:type="simple" xlink:href="http://www.weborganic.org" xlink:title="Weborganic.org" />
+			</method>
+			<method abstract="false" final="false" static="false" synchronized="false" visibility="public" name="getStuff" synthetic="false" fulltype="java.util.List&lt;java.lang.String&gt;" type="List" interface="false">
+				<tags>
+					<tag name="@MyTestTaglet">
+						<description><test-tags>
+  <tag-test>Big Bang is it an {@link Object}?</tag-test>
+</test-tags>
+</description>
+					</tag>
+				</tags>
+				<parameters>
+					<parameter name="e" fulltype="org.weborganic.xmldoclet.test.TestEnum" type="TestEnum">
+						<description>a random parameter, can be 
+  <code>null</code></description>
+					</parameter>
+				</parameters>
+			</method>
+			<method abstract="false" final="false" static="false" synchronized="false" visibility="public" name="tags" synthetic="false" fulltype="void" type="void" interface="false">
+				<description>This is a link to java.lang.Object#getClass().</description>
+				<tags>
+					<tag name="@since">
+						<description>1.0</description>
+					</tag>
+				</tags>
+				<see xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.TestClass.xml" />
+				<see xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.TestAnnotation.xml" />
+				<see xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.TestEnum.xml" />
+				<see xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.xml" />
+			</method>
+		</methods>
+	</class>
+
+</root>

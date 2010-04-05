@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<meta created="2010-04-04T19:22:26" version="0.7" />
+	<class xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.TestInterface.xml" />
+	<class xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.TestEnum.xml" />
+	<class xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.TestClass.xml" />
+	<class xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.TestAnnotation.xml" />
+	<class xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.TestAbstractClass.xml" />
+	<package xlink:type="simple" xlink:href="org.weborganic.xmldoclet.test.xml" />
+</root>

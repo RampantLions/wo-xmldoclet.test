@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  An ant file used to test the XML doclet.
+
+  @author Christophe Lauret
+  @version 24 February 2010
+
+  Copyright (c) 2010 Weborganic Systems Pty. Ltd.
+-->
+<project name="weborganic-xmldoclet-test" default="test-xmldoclet" >
+
+  <!--
+    Loads the properties for testing XMLDoclet
+    - doclet.path (path to the doclet classes or jar file)
+    - doclet.lib  (path to the doclet dependencies, eg. tidy)
+   -->
+  <loadproperties srcFile="doclet.properties"/>
+
+  <!-- libraries required for the source -->
+  <path id="lib.required" >
+  </path>
+
+  <!-- initialise -->
+  <target name="init">
+    <tstamp>
+      <format property="TODAY" pattern="d MMM yyyy"/>
+    </tstamp>
+  </target>
+
+  <!-- generate the javadoc for PageSeeder Core ================================================ -->
+  <target name="test-xmldoclet" depends="init" description="Test the XML doclet by invoking it on some test classes">
+    <delete dir="data/doc"/>
+    <mkdir dir="data/doc"/>
+    <javadoc access="public" sourcepath="src" docencoding="utf-8" packagenames="org.weborganic.xmldoclet.test">
+      <classpath>
+        <pathelement location="classes"/>
+        <path refid="lib.required"/>
+      </classpath>
+      <taglet name="org.weborganic.xmldoclet.tag.TestTaglet" />
+      <tag name="CustomTag" scope="all" description="My very own Custom Tag!"/>
+      <doclet name="org.weborganic.xmldoclet.XMLDoclet" path="classes;${doclet.lib};${doclet.path}">
+        <param name="-d" value="data/doc"/>
+        <param name="-multiple"/>
+      </doclet>
+    </javadoc>
+  </target>
+
+</project>

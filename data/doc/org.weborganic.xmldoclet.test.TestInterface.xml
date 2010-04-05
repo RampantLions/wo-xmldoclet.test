@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<meta created="2010-04-04T19:22:26" version="0.7" />
+	<class abstract="true" final="false" visibility="public" name="org.weborganic.xmldoclet.test.TestInterface" package="org.weborganic.xmldoclet.test" enum="false" serializable="false" interface="true" fulltype="org.weborganic.xmldoclet.test.TestInterface" type="TestInterface">
+		<description>A sample interface for testing.</description>
+		<tags>
+			<tag name="@author">
+				<description><author>Christophe Lauret</author>
+</description>
+			</tag>
+			<tag name="@version">
+				<description>1 April 2010</description>
+			</tag>
+		</tags>
+		<methods>
+			<method abstract="false" final="false" static="false" synchronized="false" visibility="public" name="doSomething" synthetic="false" fulltype="void" type="void" interface="false">
+				<description>Classes implementing this interface should do something.</description>
+				<exceptions>
+					<exception comment="Should that method misbehave." fulltype="java.lang.NullPointerException" type="NullPointerException">
+						<description>Should that method misbehave.</description>
+					</exception>
+				</exceptions>
+			</method>
+		</methods>
+	</class>
+
+</root>
